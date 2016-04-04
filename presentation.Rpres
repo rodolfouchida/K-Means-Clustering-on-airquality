@@ -1,0 +1,44 @@
+K-Means Clustering App
+========================================================
+author: Rodolfo Uchida
+date: April 3rd, 2016
+
+Summary
+========================================================
+
+The purpose of this presentation is to show the main features of the Shiny App that we developed. The development of this application is the final project of the Coursera Developing Data Products course. In this presentation we will cover
+
+- Main Features
+- The data analyzed
+- The application running
+
+Main Features
+========================================================
+
+The data explored is the airquality which comes from the datasets package in r, then the data is processed removing NA`s values and categorical variables. The application allows the user:
+
+- Select the variables of interest
+- Select the number os clusters
+- See the clusters and where their centers are located in the graph
+
+
+Application
+========================================================
+
+The transformed airquality dataset is shown below
+
+```{r, echo=FALSE}
+head(na.omit(airquality[,c(-5,-6)]))
+```
+
+Application
+========================================================
+
+Here is the application 
+
+<div style='text-align: center;'>
+    <img height='360' src='image.png' />
+</div>
+
+
+
